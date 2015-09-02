@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>        
+        <!-- META SECTION -->
+        <title>My Coach</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="../css/theme-default.css"/>
+        <!-- EOF CSS INCLUDE -->                                     
+    </head>
+    <body>
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <div class="error-text">página não encontrada</div>
+            <div class="error-subtext">Infelizmente nós estamos tendo problemas para carregar a página que você está solicitando.<br/>Por favor, aguarde um momento e tente novamente ou use uma das ação abaixo.</div>
+            <div class="error-actions">                                
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn btn-info btn-block btn-lg" onClick="document.location.href = 'index.xhtml';">Página Inicial</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-block btn-lg" onClick="history.back();">Página Anterior</button>
+                    </div>
+                </div>                                
+            </div>
+            <div class="error-subtext">Ou você pode usar a pesquisa para encontrar o que você precisa.</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" placeholder="Busca..." class="form-control"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary"><span class="fa fa-search"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                 
+    </body>
+</html>
