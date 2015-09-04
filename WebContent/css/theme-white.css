@@ -678,19 +678,19 @@ color:#fff;
 }
 .x-navigation.x-navigation-minimized li.xn-profile .profile:after {
   right: 100%;
-  top: 23px;
+  top: -35px;
   border: solid transparent;
   content: " ";
   height: 0;
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-color: rgba(0, 0, 0, 0);
-  border-right-color: #1e293d;
-  border-width: 5px;
-  margin-top: -5px;
+  border-color: rgba(0, 0, 0, 0) white;
+  border-right-color: white;
+  border-width: 10px;
+  margin-top: -194px;
 }
-.x-navigation.x-navigation-minimized li.xn-title {
+ x-navigation.x-navigation-minimized li.xn-title {
   display: none;
 }
 .x-navigation.x-navigation-minimized li.active > ul {
@@ -713,7 +713,7 @@ color:#fff;
   position: absolute;
   pointer-events: none;
   border-color: rgba(0, 0, 0, 0);
-  border-right-color: #1e293d;
+  border-right-color: white;
   border-width: 5px;
   margin-top: -5px;
 }
@@ -992,7 +992,7 @@ color:#fff;
   right: auto;
   left: 100%;
   border-right-color: transparent;
-  border-left-color: #1e293d;
+  border-left-color: white;
 }
 .page-container.page-mode-rtl .x-navigation.x-navigation-minimized li .profile {
   right: auto;
@@ -1002,7 +1002,7 @@ color:#fff;
   right: auto;
   left: 100%;
   border-right-color: transparent;
-  border-left-color: #1e293d;
+  border-left-color: white;
 }
 .page-container-boxed .x-navigation {
   -moz-border-radius: 5px 0px 0px 5px;
@@ -1140,9 +1140,9 @@ color:#fff;
 /* X-NAVIGATION FEATURES */
 .x-navigation.x-navigation-minimized .profile {
   width: 220px;
-  background: #1e293d;
+  background: white;
   position: absolute;
-  top: 4px;
+  top: 60px;
   right: -230px;
   display: none;
   -moz-border-radius: 3px;
@@ -1309,8 +1309,8 @@ color:#fff;
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  background: #1e293d;
-  border-color: #1e293d;
+  background: white;
+  border-color: white;
 }
 .list-group-item {
   border-color: #E5E5E5;
@@ -1436,7 +1436,7 @@ a.list-group-item:focus {
   border-top-width: 1px;
 }
 .panel.panel-primary {
-  border-top-color: #1e293d;
+  border-top-color: white;
 }
 .panel.panel-success {
   border-top-color: #95b75d;
@@ -1486,7 +1486,7 @@ a.list-group-item:focus {
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
-  color: #434a54;
+  color: white;
   padding: 0px;
   margin: 0px;
 }

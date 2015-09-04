@@ -19,6 +19,9 @@
 .clearfix {
   zoom: 1;
 }
+.disable{
+	display: none;
+}
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -673,7 +676,7 @@ body.page-container-boxed .page-container {
 }
 .x-navigation.x-navigation-minimized li.xn-profile .profile:after {
   right: 100%;
-  top: 23px;
+  top: -35px;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -682,8 +685,8 @@ body.page-container-boxed .page-container {
   pointer-events: none;
   border-color: rgba(0, 0, 0, 0);
   border-right-color: #1b1e24;
-  border-width: 5px;
-  margin-top: -5px;
+  border-width: 10px;
+  margin-top: -194px;
 }
 .x-navigation.x-navigation-minimized li.xn-title {
   display: none;
@@ -1137,7 +1140,7 @@ body.page-container-boxed .page-container {
   width: 220px;
   background: #1b1e24;
   position: absolute;
-  top: 4px;
+  top: 60px;
   right: -230px;
   display: none;
   -moz-border-radius: 3px;
@@ -4926,7 +4929,7 @@ background: #1caf9a !important;
   height: 30px;
   width: 36px;
   top: -150px;
-  background: black;
+  background: #1d2127;
   -moz-border-radius: 5px 0px 0px 5px;
   -webkit-border-radius: 5px 0px 0px 5px;
   border-radius: 0px;
@@ -4938,7 +4941,7 @@ background: #1caf9a !important;
 }
 .theme-settings .ts-body {
   width: 200px;
-  background: black;
+  background: #1d2127;
   -moz-border-radius: 5px 0px 0px 5px;
   -webkit-border-radius: 5px 0px 0px 5px;
   border-radius: 0px;

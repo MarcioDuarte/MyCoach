@@ -674,7 +674,7 @@ background: black;
 }
 .x-navigation.x-navigation-minimized li.xn-profile .profile:after {
   right: 100%;
-  top: 23px;
+  top: -35px;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -682,9 +682,9 @@ background: black;
   position: absolute;
   pointer-events: none;
   border-color: rgba(0, 0, 0, 0);
-  border-right-color: #2f323a;
-  border-width: 5px;
-  margin-top: -5px;
+  border-right-color: black;
+  border-width: 10px;
+  margin-top: -194px;
 }
 .x-navigation.x-navigation-minimized li.xn-title {
   display: none;
@@ -1138,7 +1138,7 @@ background: black;
   width: 220px;
   background: black;
   position: absolute;
-  top: 4px;
+  top: 60px;
   right: -230px;
   display: none;
   -moz-border-radius: 3px;

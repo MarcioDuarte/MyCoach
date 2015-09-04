@@ -1,16 +1,4 @@
-var site_settings = '<div class="ts-button">'
-        +'<span class="fa fa-cogs"></span>'
-    +'</div>'
-    +'<div class="ts-body">'
-	    +'<div class="ts-title">Themes</div>'
-        +'<div class="ts-themes">'
-            +'<a href="#" class="active" data-theme="../css/theme-default.css"><img src="../img/themes/default.jpg"/></a>'            
-            +'<a href="#" class="active" data-theme="../css/theme-brown.css"><img src="../img/themes/brown.jpg"/></a>'
-            +'<a href="#" class="active" data-theme="../css/theme-blue.css"><img src="../img/themes/blue.jpg"/></a>'                        
-            +'<a href="#" class="active" data-theme="../css/theme-white.css"><img src="../img/themes/light.jpg"/></a>'            
-            +'<a href="#" class="active" data-theme="../css/theme-black.css"><img src="../img/themes/black.jpg"/></a>'
-        +'</div>'
-	+'</div>';
+var site_settings = '';
 var settings_block = document.createElement('div');
     settings_block.className = "theme-settings";
     settings_block.innerHTML = site_settings;
@@ -36,6 +24,7 @@ $(document).ready(function(){
         
         var input   = $(this);
 
+        
         if(input.attr("name") != 'st_layout_boxed'){
                 
             if(!input.prop("checked")){
@@ -87,7 +76,12 @@ $(document).ready(function(){
     
     /* Change Theme */
     $(".ts-themes a").click(function(){
+    	console.log(this);
         $("#theme").attr("href",$(this).data("theme"));
+        $(".ts-themes a").removeClass("active");
+        $(".ts-themes span").toggleClass("disable");
+        $(this).toggleClass("active");
+        
         return false;
     });
     /* END Change Theme */
@@ -183,7 +177,6 @@ function set_settings_checkbox(name,value){
     }else{
         
         var input = $(".theme-settings").find("input[name="+name+"]");
-        
         input.prop("disabled",false);            
         input.parent("div").removeClass("disabled").parent(".check").removeClass("disabled");        
         
